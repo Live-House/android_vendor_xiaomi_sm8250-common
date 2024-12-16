@@ -7266,7 +7266,7 @@ cc_prebuilt_library_shared {
 	target: {
 		android_arm64: {
 			srcs: ["proprietary/system_ext/lib64/libwfdnative.so"],
-			shared_libs: ["libinput_shim", "libandroid_runtime", "libui", "libinput", "libnativehelper", "libutils", "liblog", "libwfdclient", "libhidlbase", "libhidlmemory", "libbinder", "libgui", "android.hidl.base@1.0", "android.hidl.token@1.0-utils", "android.hardware.graphics.common@1.0", "android.hardware.graphics.bufferqueue@1.0", "android.hardware.graphics.bufferqueue@2.0", "libc++", "libc", "libm", "libdl", ],
+			shared_libs: ["libbinder_shim", "libinput_shim", "libandroid_runtime", "libui", "libinput", "libnativehelper", "libutils", "liblog", "libwfdclient", "libhidlbase", "libhidlmemory", "libbinder", "libgui", "android.hidl.base@1.0", "android.hidl.token@1.0-utils", "android.hardware.graphics.common@1.0", "android.hardware.graphics.bufferqueue@1.0", "android.hardware.graphics.bufferqueue@2.0", "libc++", "libc", "libm", "libdl", ],
 		},
 	},
 	compile_multilib: "64",
@@ -7499,10 +7499,10 @@ android_app_import {
 	name: "CACertService",
 	owner: "xiaomi",
 	apk: "proprietary/vendor/app/CACertService/CACertService.apk",
-	certificate: "platform",
 	dex_preopt: {
 		enabled: false,
 	},
+	certificate: "platform",
 	soc_specific: true,
 }
 
@@ -7510,11 +7510,11 @@ android_app_import {
 	name: "CneApp",
 	owner: "xiaomi",
 	apk: "proprietary/vendor/app/CneApp/CneApp.apk",
-	required: ["CneApp.libvndfwk_detect_jni.qti_symlink"],
-	certificate: "platform",
 	dex_preopt: {
 		enabled: false,
 	},
+	required: ["CneApp.libvndfwk_detect_jni.qti_symlink"],
+	certificate: "platform",
 	soc_specific: true,
 }
 
@@ -7522,10 +7522,10 @@ android_app_import {
 	name: "IWlanService",
 	owner: "xiaomi",
 	apk: "proprietary/vendor/app/IWlanService/IWlanService.apk",
-	certificate: "platform",
 	dex_preopt: {
 		enabled: false,
 	},
+	certificate: "platform",
 	soc_specific: true,
 }
 
@@ -7533,10 +7533,10 @@ android_app_import {
 	name: "TimeService",
 	owner: "xiaomi",
 	apk: "proprietary/vendor/app/TimeService/TimeService.apk",
-	certificate: "platform",
 	dex_preopt: {
 		enabled: false,
 	},
+	certificate: "platform",
 	soc_specific: true,
 }
 
@@ -7544,10 +7544,10 @@ android_app_import {
 	name: "PowerOffAlarm",
 	owner: "xiaomi",
 	apk: "proprietary/system_ext/app/PowerOffAlarm/PowerOffAlarm.apk",
-	certificate: "platform",
 	dex_preopt: {
 		enabled: false,
 	},
+	certificate: "platform",
 	system_ext_specific: true,
 }
 
@@ -7555,10 +7555,10 @@ android_app_import {
 	name: "QtiTelephonyService",
 	owner: "xiaomi",
 	apk: "proprietary/system_ext/app/QtiTelephonyService/QtiTelephonyService.apk",
-	certificate: "platform",
 	dex_preopt: {
 		enabled: false,
 	},
+	certificate: "platform",
 	system_ext_specific: true,
 }
 
@@ -7566,10 +7566,10 @@ android_app_import {
 	name: "WfdService",
 	owner: "xiaomi",
 	apk: "proprietary/system_ext/priv-app/WfdService/WfdService.apk",
-	certificate: "platform",
 	dex_preopt: {
 		enabled: false,
 	},
+	certificate: "platform",
 	privileged: true,
 	system_ext_specific: true,
 }
@@ -7578,10 +7578,10 @@ android_app_import {
 	name: "ims",
 	owner: "xiaomi",
 	apk: "proprietary/system_ext/priv-app/ims/ims.apk",
-	certificate: "platform",
 	dex_preopt: {
 		enabled: false,
 	},
+	certificate: "platform",
 	privileged: true,
 	system_ext_specific: true,
 }
@@ -7590,10 +7590,10 @@ android_app_import {
 	name: "qcrilmsgtunnel",
 	owner: "xiaomi",
 	apk: "proprietary/system_ext/priv-app/qcrilmsgtunnel/qcrilmsgtunnel.apk",
-	certificate: "platform",
 	dex_preopt: {
 		enabled: false,
 	},
+	certificate: "platform",
 	privileged: true,
 	system_ext_specific: true,
 }
@@ -9104,10 +9104,10 @@ android_app_import {
 	name: "SoterService",
 	owner: "xiaomi",
 	apk: "proprietary/vendor/app/SoterService/SoterService.apk",
-	certificate: "platform",
 	dex_preopt: {
 		enabled: false,
 	},
+	certificate: "platform",
 	soc_specific: true,
 }
 
